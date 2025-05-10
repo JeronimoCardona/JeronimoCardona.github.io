@@ -1,0 +1,95 @@
+body {
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  color: #fff;
+  background-image: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcGsydHpjYjdlejhoM2sycW1jcGNydGQzejN3cXExMjBnbDZ0MndneCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/HSCZMUa1ao17h7l5mg/giphy.gif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(255, 192, 203, 0.5);
+  backdrop-filter: blur(5px);
+  max-width: 90%;
+  width: 350px;
+  transition: all 0.5s ease;
+}
+
+.container.expanded {
+  width: 80%;
+  max-width: 800px;
+}
+
+h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3em;
+  margin-bottom: 0.3em;
+  color: #ffffff;
+}
+
+.subtexto {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+  color: #ffe6f0;
+}
+
+#photo {
+  display: block;
+  margin: 20px auto 10px auto;
+  max-width: 80%; /* Hacer que la imagen ocupe solo el 80% del contenedor */
+  height: auto;   /* Mantener la proporción de la imagen */
+  max-height: 300px; /* Limitar la altura de la imagen */
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+#imageText {
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: #ffeef5;
+  white-space: pre-wrap;
+}
+
+#nextButton {
+  margin-top: 20px;
+  padding: 15px 30px;
+  font-size: 1.1em;
+  background: linear-gradient(45deg, #ff4d88, #ff80bf);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+#nextButton:hover {
+  transform: scale(1.05);
+  background: linear-gradient(45deg, #ff3385, #ff66a3);
+}
+
+#nextButton:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+#finalMessage {
+  margin-top: 30px;
+  font-size: 1.3em;
+  color: #ffe6f0;
+  display: none;
+  white-space: pre-wrap;
+}
